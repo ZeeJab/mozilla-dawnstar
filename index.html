@@ -7,9 +7,93 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/DateTimePicker.css" />
+  <script type="text/javascript" src="js/DateTimePicker.js"></script>
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/DateTimePicker-ltie9.css" />
+    <script type="text/javascript" src="js/DateTimePicker-ltie9.js"></script>
+  <![endif]-->
+
 </head>
 <body>
-  <div class="container">
-  </div>
+    <div class="container">
+      <div class="steps">
+        <p class="step-text">1</p>
+      </div>
+      <form action="#" method="post">
+        <div role="info">
+          <label for="name">Event Name</label>
+          <input type="text" name="name" placeholder="Event Name">
+        </div>
+
+        <div role="info">
+          <label for="number"># of Attendees</label>
+          <input type="number" min="1" max="1000" placeholder="1">
+        </div>
+
+        <div role="info">
+          <!--  Date Input  -->
+          <label for="date">Event Date</label>
+          <input type="text" data-field="date" placeholder="10/27/14" readonly>
+        </div>
+        <div id="js-date-box"></div>
+
+        <div role="submit">
+          <input type="submit" value="Build Event">
+        </div>
+      </form>
+      <div class="steps">
+        <p class="step-text">2</p>
+      </div>
+
+      <div class="type-container clearfix">
+        <div class="type">Privacy</div>
+        <div class="type">Video</div>
+        <div class="type">Make a meme</div>
+      </div>
+
+      <!-- <article class="tips-and-tricks">
+        <h2 class="align-center">Event Type</h2>
+
+        <section class="topic topic-blue-gray">
+          <section class="check-mark">
+            <span></span>
+          </section>
+          <section class="topic-description">
+            <h3>Tips for creating great teaching kits</h3>
+            <div exclude="phone">
+              <p>Top tips for creating great teaching kits on webmaker.org/teach</p>
+            </div>
+          </section>
+           <a href="https://support.mozilla.org/en-US/kb/top-tips-creating-great-teaching-kits" target="_blank" class="link-target"></a>
+        </section>
+        <section class="topic topic-blue-gray">
+          <section class="check-mark">
+            <span></span>
+          </section>
+          <section class="topic-description">
+            <h3>Pro Tips for great teaching kits</h3>
+            <div exclude="phone">
+              <p>Pro tips on the Webmaker teaching kits</p>
+            </div>
+          </section>
+           <a href="https://support.mozilla.org/en-US/kb/pro-tips-webmaker-teaching-kits" target="_blank" class="link-target"></a>
+        </section>
+        <section class="topic topic-blue-gray">
+          <section class="check-mark">
+            <span></span>
+          </section>
+          <section class="topic-description">
+            <h3>Event Guides</h3>
+            <div exclude="phone">
+              <p>Guides to help you plan small, medium and large events</p>
+            </div>
+          </section>
+           <a href="https://events.webmaker.org/#!/event-guides" target="_blank" class="link-target"></a>
+        </section>
+      </article> -->
+    </div>
 </body>
 </html>
