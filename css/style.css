@@ -17,6 +17,42 @@ body {
   font-family: avenir, 'Comic Sans MS', helvetica, arial, sans-serif;
 }
 
+/*nav*/
+.navbar-webmaker {
+  padding: 12px 0;
+  height: 90px;
+  background-color: #fff;
+  border-color: #eee;
+  margin-bottom: 0;
+}
+
+.navbar {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.navbar-header {
+  margin-right: 0;
+  margin-left: 0;
+  float: left;
+}
+
+.navbar-webmaker .webmaker-logo { padding: 0; }
+
+.webmaker-logo img {
+  display: inline-block;
+  width: 225px;
+  height: 66px;
+}
+
+.header-container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .container {
   width: 95%;
   max-width: 950px;
@@ -101,7 +137,7 @@ input[type="submit"]:active { border: 2px solid white;}
 
 .type {
   float: left;
-  background-color: rgba(255, 241, 0, 0.5);
+  background-color: rgba(255, 241, 0, 1);
   width: 33.33%;
   height: 100%;
   position: relative;
