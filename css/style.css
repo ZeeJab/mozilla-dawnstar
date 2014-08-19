@@ -30,6 +30,7 @@ form {
 }
 
 div[role="info"] { padding: 0 0 2% 0; }
+div[role="info"]:nth-of-type(3) { padding: 0; }
 
 label {
   display: block;
@@ -49,15 +50,18 @@ input {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-input[type="submit"] {
+button[type="submit"] {
+  -webkit-appearance: none;
+  border: none;
   background-color: #F5185A;
   color: white;
   text-transform: uppercase;
+  padding: 10px;
 }
 
-/*input[type="submit"]:hover {
-  background-color: rgba(245, 24, 90, 0.5);
-}*/
+button[type="submit"]:hover {
+  background-color: rgba(63,181,142,1);
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -103,6 +107,12 @@ input[type="submit"]:active { border: 2px solid white;}
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  padding: 20px;
+}
+
+.type:nth-of-type(2) {
+  border-right: 1px dotted rgba(63,181,142,1);
+  border-left: 1px dotted rgba(63,181,142,1);
 }
 
 .type:hover {
@@ -114,6 +124,7 @@ input[type="submit"]:active { border: 2px solid white;}
   visibility: hidden;
   color: #F5185A;
 }
+
 .type:hover .overlay-on-hover { visibility: visible;}
 
 .type:hover .fa-times,
