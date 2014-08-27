@@ -5,6 +5,7 @@
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
@@ -18,41 +19,81 @@
 
 </head>
 <body>
-    <div class="container">
-      <div class="steps">
-        <p class="step-text">1</p>
-      </div>
-      <form action="#" method="post">
-        <div role="info">
-          <label for="name">Event Name</label>
-          <input type="text" name="name" placeholder="Event Name">
-        </div>
-
-        <div role="info">
-          <label for="number"># of Attendees</label>
-          <input type="number" min="1" max="1000" placeholder="1">
-        </div>
-
-        <div role="info">
-          <!--  Date Input  -->
-          <label for="date">Event Date</label>
-          <input type="text" data-field="date" placeholder="10/27/14" readonly>
-        </div>
-        <div id="js-date-box"></div>
-
-        <div role="submit">
-          <input type="submit" value="Build Event">
-        </div>
-      </form>
-      <div class="steps">
-        <p class="step-text">2</p>
-      </div>
-
-      <div class="type-container clearfix">
-        <div class="type">Privacy</div>
-        <div class="type">Video</div>
-        <div class="type">Make a meme</div>
+  <nav class="navbar navbar-webmaker">
+    <div class="header-container">
+      <div class="navbar-header">
+        <a href="/index.html" class="logo webmaker-logo">
+          <img src="https://webmaker.org/img/logo.png">
+        </a>
       </div>
     </div>
+  </nav>
+  <div class="container">
+    <div class="steps">
+      <p class="step-text">1</p>
+    </div>
+    <form action="#" method="post">
+      <div role="info">
+        <label for="name">Event Name</label>
+        <input type="text" name="name" placeholder="Event Name">
+      </div>
+
+      <div role="info">
+        <label for="number"># of Attendees</label>
+        <input type="number" min="1" max="1000" placeholder="1">
+      </div>
+
+      <div role="info">
+        <!--  Date Input  -->
+        <label for="date">Event Date</label>
+        <input type="text" data-field="date" placeholder="10/27/14" readonly>
+      </div>
+      <div id="js-date-box"></div>
+    </form>
+    <div class="steps">
+      <p class="step-text">2</p>
+    </div>
+
+    <div class="type-container clearfix">
+      <div class="type overlay">
+        <i class="fa fa-times"></i>
+        <div class="overlay-on-hover">
+          <p>Privacy</p>
+          <p>a</p>
+          <p>b</p>
+          <p>c</p>
+          <a href="invitation.html">
+            <button type="submit">Built Event</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="type overlay">
+        <i class="fa fa-video-camera"></i>
+        <div class="overlay-on-hover">
+          <p>Video</p>
+          <p>a</p>
+          <p>b</p>
+          <p>c</p>
+          <a href="invitation.html">
+            <button type="submit">Built Event</button>
+          </a>
+        </div>
+      </div>
+      <div class="type over-lay">
+        <i class="fa fa-umbrella"></i>
+        <div class="overlay-on-hover">
+          <p>Make a Meme</p>
+          <p>a</p>
+          <p>b</p>
+          <p>c</p>
+          <a href="invitation.html">
+            <button type="submit">Built Event</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
